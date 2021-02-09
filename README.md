@@ -1,2 +1,2 @@
-# ChrisAndSheenaDotCom
+# ChrisAndSheena.com
 Our diving website
