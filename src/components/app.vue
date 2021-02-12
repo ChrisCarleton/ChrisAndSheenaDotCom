@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <router-view />
   </div>
 </template>
@@ -9,6 +9,6 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 
 </style>
