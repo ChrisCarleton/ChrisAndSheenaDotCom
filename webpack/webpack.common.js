@@ -72,7 +72,7 @@ module.exports = {
     }),
     new webpack.ids.HashedModuleIdsPlugin(),
     new CompressionWebpackPlugin({
-      filename: '[path].gz[query]',
+      filename: '[path][base].gz[query]',
       algorithm: 'gzip',
       test: /\.(js|vue|css|s[ac]ss|png|jpe?g|gif|svg)$/i,
     }),

@@ -10,8 +10,10 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   output: {
-    filename: '[name].[hash].js',
+    filename: '[name].[chunkhash].js',
+    chunkFilename: '[id].[chunkhash].js',
     path: path.resolve(__dirname, '../dist/dev'),
+    sourceMapFilename: '[name].map[query]',
     publicPath: '/',
   },
   plugins: [
