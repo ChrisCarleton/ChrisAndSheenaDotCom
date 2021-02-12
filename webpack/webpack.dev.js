@@ -28,9 +28,6 @@ module.exports = merge(common, {
     hot: true,
     index: 'index.html',
     port: 8081,
-    proxy: {
-      '/api': process.env.BT_API_URL || 'http://localhost:29201/',
-    },
     publicPath: '/',
     watchContentBase: true,
   },
