@@ -1,9 +1,9 @@
-require('./styles/main.scss');
-
 import App from './components/app.vue';
 import routes from './routes';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+
+import './styles/main.scss';
 
 Vue.config.productionTip = false;
 

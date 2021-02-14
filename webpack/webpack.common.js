@@ -10,8 +10,6 @@ const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 const webpack = require('webpack');
 
-const styleLoader = process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'vue-style-loader';
-
 module.exports = {
   entry: {
     corejs: 'core-js/stable',
@@ -35,11 +33,15 @@ module.exports = {
       // Stylesheets
       {
         test: /\.css$/,
-        use: [ styleLoader, 'css-loader' ],
+        use: [ MiniCssExtractPlugin.loader, 'css-loader' ],
       },
       {
-        test: /\.s[ac]ss$/,
-        use: [ styleLoader, 'css-loader', 'sass-loader' ],
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
       },
 
       // Images
