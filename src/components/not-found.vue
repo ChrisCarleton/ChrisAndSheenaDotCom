@@ -1,9 +1,14 @@
 <template>
-  <div>404</div>
+  <div><PageTitle title="404: Not Found" /></div>
 </template>
 
 <script>
+import PageTitle from './controls/page-title.vue';
+
 export default {
+  components: {
+    PageTitle,
+  },
 };
 </script>
 
